@@ -4,7 +4,8 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: var(--padding-big) var(--padding-big) calc(var(--padding-big) * 2) var(--padding-big);
+  padding: var(--padding-big) var(--padding-big) calc(var(--padding-big) * 2)
+    var(--padding-big);
   box-sizing: border-box;
   background-color: var(--background);
 }

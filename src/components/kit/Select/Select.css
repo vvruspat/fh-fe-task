@@ -1,46 +1,46 @@
 .select {
-    position: relative;
+  position: relative;
 }
 
 .select-button {
-    justify-content: space-between;
-    min-width: 100px;
+  justify-content: space-between;
+  min-width: 100px;
 }
 
 .select-button.opened {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom: 0 none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0 none;
 }
 
 .select-dropdown {
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    box-sizing: border-box;
-    border: 1px solid var(--border-color);
-    border-top: 0 none;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-top: 0 none;
 }
 
 .select-dropdown.opened {
-    display: block;
+  display: block;
 
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .select-option {
-    padding: var(--padding-small);
-    padding-left: 0;
+  padding: var(--padding-small);
+  padding-left: 0;
 }
 
 .select-option:hover {
-    background: var(--secondary-background);
+  background: var(--secondary-background);
 }
 
 .select-option.selected {
-    font-weight: bold;
+  font-weight: bold;
 }

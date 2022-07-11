@@ -6,18 +6,18 @@ export type RoomsReducer = {
 };
 
 const searchParams = new URLSearchParams(window.location.search);
-const serializedData = searchParams.get('data');
-const rooms: TRoom[] = serializedData.split('|').map((serializedRoom) => {
-  const roomData = serializedRoom.split(':');
+const serializedData = searchParams.get("data");
+const rooms: TRoom[] = serializedData.split("|").map((serializedRoom) => {
+  const roomData = serializedRoom.split(":");
 
   const adults = Number(roomData[0]) ?? 1;
-  const children = roomData[1]?.split(',').map((child) => Number(child)) ?? [];
+  const children = roomData[1]?.split(",").map((child) => Number(child)) ?? [];
 
   return {
     id: (Date.now() + Math.random()).toString(),
     adults,
     children,
-  }
+  };
 });
 
 const initialState: RoomsReducer = {
@@ -26,7 +26,7 @@ const initialState: RoomsReducer = {
       id: Date.now().toString(),
       adults: 1,
       children: [],
-    }
+    },
   ],
 };
 
@@ -48,14 +48,24 @@ const RoomsSlice = createSlice({
       state.rooms[idx] = room;
     },
 
-    updateChild(state, action: PayloadAction<{roomId: TRoom["id"], childIndex: number, age: number}>) {
+    updateChild(
+      state,
+      action: PayloadAction<{
+        roomId: TRoom["id"];
+        childIndex: number;
+        age: number;
+      }>
+    ) {
       const { roomId, childIndex, age } = action.payload;
       const roomIndex = state.rooms.findIndex((_room) => _room.id === roomId);
 
       state.rooms[roomIndex].children[childIndex] = age;
     },
 
-    removeChild(state, action: PayloadAction<{roomId: TRoom["id"], childIndex: number}>) {
+    removeChild(
+      state,
+      action: PayloadAction<{ roomId: TRoom["id"]; childIndex: number }>
+    ) {
       const { roomId, childIndex } = action.payload;
       const roomIndex = state.rooms.findIndex((_room) => _room.id === roomId);
 
@@ -63,14 +73,18 @@ const RoomsSlice = createSlice({
     },
 
     addRoom(state, _action: PayloadAction<RoomsReducer["rooms"]>) {
-      state.rooms = [...state.rooms, {
-        id: Date.now().toString(),
-        adults: 1,
-        children: [],
-      }];
+      state.rooms = [
+        ...state.rooms,
+        {
+          id: Date.now().toString(),
+          adults: 1,
+          children: [],
+        },
+      ];
     },
   },
 });
 
-export const { removeRoom, updateRoom, addRoom, updateChild, removeChild } = RoomsSlice.actions;
+export const { removeRoom, updateRoom, addRoom, updateChild, removeChild } =
+  RoomsSlice.actions;
 export default RoomsSlice.reducer;

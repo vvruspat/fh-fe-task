@@ -75,9 +75,7 @@ export const Modal = ({
             >
               <Icon name="close" />
             </Button>
-            <div className="modal-header-content">
-              {header}
-            </div>
+            <div className="modal-header-content">{header}</div>
           </header>
         )}
         <section className="modal-content">{children}</section>

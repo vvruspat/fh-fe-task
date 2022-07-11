@@ -32,9 +32,9 @@ export const Button = ({
       )}
       {...buttonProps}
     >
-      {before && <div className='button-before'>{before}</div>}
+      {before && <div className="button-before">{before}</div>}
       {children}
-      {after && <div className='button-after'>{after}</div>}
+      {after && <div className="button-after">{after}</div>}
     </button>
   );
 };

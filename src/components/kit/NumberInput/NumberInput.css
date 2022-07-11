@@ -1,15 +1,16 @@
-.number-input-wrapper {}
+.number-input-wrapper {
+}
 
 .number-input-element {
-    border: 0 none;
-    text-align: center;
-    padding: 0;
+  border: 0 none;
+  text-align: center;
+  padding: 0;
 }
 
 .number-input-element > input {
-    text-align: center;
+  text-align: center;
 }
 
 .number-input-button {
-    padding: var(--padding-small);
+  padding: var(--padding-small);
 }

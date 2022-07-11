@@ -1,39 +1,39 @@
 .rooms {
-    display: flex;
-    justify-content: stretch;
-    flex-direction: column;
-    max-height: 100vH;
+  display: flex;
+  justify-content: stretch;
+  flex-direction: column;
+  max-height: 100vh;
 }
 
 .rooms-wrapper {
-    padding: var(--padding-big);
-    padding-bottom: 0;
-    overflow-y: scroll;
-    flex: 1;
-    height: 100%;
+  padding: var(--padding-big);
+  padding-bottom: 0;
+  overflow-y: scroll;
+  flex: 1;
+  height: 100%;
 }
 
 .rooms-wrapper.extended {
-    padding-bottom: 108px;
+  padding-bottom: 108px;
 }
 
 .add-room-button-wrapper {
-    flex-grow: 0;
-    padding: 0 var(--padding-big);
-    padding-bottom: 0;
-    position: sticky;
-    height: calc(var(--padding-big) * 2 + 48px);
-    width: 100%;
-    bottom: 100px;
-    box-sizing: border-box;
-    background-color: var(--background);
+  flex-grow: 0;
+  padding: 0 var(--padding-big);
+  padding-bottom: 0;
+  position: sticky;
+  height: calc(var(--padding-big) * 2 + 48px);
+  width: 100%;
+  bottom: 100px;
+  box-sizing: border-box;
+  background-color: var(--background);
 }
 
 .rooms-wrapper.extended + .add-room-button-wrapper {
-    padding-top: var(--padding-big);
+  padding-top: var(--padding-big);
 }
 
 .add-room-button {
-    height: 48px;
-    width: 100%;
+  height: 48px;
+  width: 100%;
 }

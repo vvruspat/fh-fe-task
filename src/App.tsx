@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import { Provider } from "react-redux";
-import { ModalsRoot } from './components/Modals/Modals';
-import { Home } from './components/pages/Home/Home';
+import { ModalsRoot } from "./components/Modals/Modals";
+import { Home } from "./components/pages/Home/Home";
 import store from "./redux/store";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (

@@ -20,7 +20,14 @@ export const SelectGuestsModal = ({
   const { setModal } = useContext(ModalsContext);
   const rooms = useSelector((state: GlobalState) => state.rooms.rooms);
 
-  const guestsNumber = useMemo(() => rooms.reduce<number>((num, room) => num + room.adults + room.children.length, 0), [rooms]);
+  const guestsNumber = useMemo(
+    () =>
+      rooms.reduce<number>(
+        (num, room) => num + room.adults + room.children.length,
+        0
+      ),
+    [rooms]
+  );
 
   return (
     <Modal
@@ -32,8 +39,15 @@ export const SelectGuestsModal = ({
       <Rooms />
 
       <div className="select-guest-footer">
-        <Button before={<Icon name="search" />} className="select-guest-search-button" onClick={() => setModal(null)}>
-          Search <span className="select-guest-search-button-data">{rooms.length} rooms • {guestsNumber} guests</span>
+        <Button
+          before={<Icon name="search" />}
+          className="select-guest-search-button"
+          onClick={() => setModal(null)}
+        >
+          Search{" "}
+          <span className="select-guest-search-button-data">
+            {rooms.length} rooms • {guestsNumber} guests
+          </span>
         </Button>
       </div>
     </Modal>
