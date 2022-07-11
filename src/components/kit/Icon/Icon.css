@@ -1,0 +1,69 @@
+.icon {
+    display: inline-block;
+    background: no-repeat center center;
+    background-size: contain;
+}
+
+/* 16x16 */
+
+.icon.pointer {
+    width: 16px;
+    height: 16px;
+    background-image: url('./icons/pointer.svg');
+}
+
+.icon.geo {
+    width: 16px;
+    height: 16px;
+    background-image: url('./icons/geo.svg');
+}
+
+.icon.guests {
+    width: 16px;
+    height: 16px;
+    background-image: url('./icons/guests.svg');
+}
+
+.icon.calendar {
+    width: 16px;
+    height: 16px;
+    background-image: url('./icons/calendar.svg');
+}
+
+/* 24x24 */
+
+.icon.search {
+    width: 24px;
+    height: 24px;
+    background-image: url('./icons/search.svg');
+}
+
+.icon.plus {
+    width: 24px;
+    height: 24px;
+    background-image: url('./icons/plus.svg');
+}
+
+.icon.minus {
+    width: 24px;
+    height: 24px;
+    background-image: url('./icons/minus.svg');
+}
+
+.icon.expand {
+    width: 24px;
+    height: 24px;
+    background-image: url('./icons/expand.svg');
+}
+
+.icon.close {
+    width: 24px;
+    height: 24px;
+    background-image: url('./icons/close.svg');
+}
+
+.icon.remove {
+    width: 24px;
+    height: 24px;
+    background-image: url('./icons/remove.svg');
+}

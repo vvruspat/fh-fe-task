@@ -1,0 +1,37 @@
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    padding: 0 var(--padding-form-item);
+    box-sizing: border-box;
+
+    font-size: 15px;
+    line-height: 24px;
+
+    background: var(--background);
+    border-radius: 6px;
+}
+
+.input-wrapper .input-element {
+    outline: none;
+    border: 0 none;
+    flex: 1;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0 var(--padding-small);
+    font-weight: 500;
+    color: var(--text);
+}
+
+.input-wrapper .input-element::placeholder {
+    color: var(--placeholder-color);
+}
+
+.input-after,
+.input-before {
+    display: flex;
+    align-items: center;
+}

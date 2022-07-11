@@ -1,0 +1,58 @@
+.date-picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    padding: 0 var(--padding-form-item);
+    box-sizing: border-box;
+
+    font-size: 15px;
+    line-height: 24px;
+
+    background: var(--background);
+    border-radius: 6px;
+}
+
+.date-picker-spacer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date-picker-spacer::after {
+    content: ' ';
+    display: block;
+    height: 24px;
+    width: 1px;
+    background: #C3DCF9;
+}
+
+.date-picker-button {
+    outline: none;
+    background: none;
+    border: 0 none;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.date-picker-button-icon {
+    padding-right: var(--padding-small);
+}
+
+.date-pickers-wrapper {
+    position: relative;
+}
+
+.date-picker-popup {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}

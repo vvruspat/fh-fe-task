@@ -1,0 +1,20 @@
+.search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--padding-form-item);
+}
+
+.date-and-guests__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.search-form-guests {
+    margin-left: var(--padding-small);
+}
+
+.search-form-date {
+    flex: 1;
+}

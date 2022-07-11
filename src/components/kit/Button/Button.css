@@ -1,0 +1,67 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-small);
+  height: 40px;
+  padding: 0 var(--padding-form-item);
+  box-sizing: border-box;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.1s ease-in;
+
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.primary-button {
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+  border: none;
+}
+
+.secondary-button {
+  background-color: var(--secondary-background);
+  color: var(--secondary-text);
+  border: 1px solid var(--border-color);
+}
+
+.outline-button {
+  background-color: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border-color);
+  font-weight: 500;
+}
+
+.icon-button {
+  background-color: var(--background);
+  color: var(--text);
+  border: 0 none;
+  font-weight: 500;
+}
+
+.stretched-button {
+  display: block;
+  width: 100%;
+}
+
+.button:active {
+  box-shadow: 0 0 1px;
+  opacity: 0.8;
+  transition: all 0.1s ease-in;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: initial;
+}
+
+.button-before,
+.button-after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,35 @@
+.home-page {
+    height: 100vH;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('./assets/home.svg') no-repeat right bottom;
+    background-size: cover;
+}
+
+.home-logo {
+    margin: var(--margin);
+}
+
+.home-slogan {
+    flex: 1;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+
+    margin: var(--margin);
+    margin-top: 86px;
+
+    color: #36424F;
+}
+
+.home-search-form {
+    margin: 8px;
+}
+
+.home-footer {
+    margin: var(--margin);
+    margin-bottom: 68px;
+}
