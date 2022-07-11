@@ -103,7 +103,7 @@ export const Room = ({ room, index, onRemove, onUpdateAdults }: Props) => {
             />
           </div>
           <div className="room-children">
-            {/* TODO: idx is a bad desicion for key, but i dont have in data any unique id */}
+            {/* TODO: idx is a bad decision for key, but i dont have in data any unique id */}
             {room.children.map((age, idx) => (
               <div className="room-child" key={idx}>
                 <div className="room-guests-title">Child {idx + 1} age</div>
